@@ -1,6 +1,8 @@
 <template>
     <div>
-        <VBtn>Hello</VBtn>
+        <v-btn variant="outlined">
+            Button
+        </v-btn>
     </div>
 </template>
 
