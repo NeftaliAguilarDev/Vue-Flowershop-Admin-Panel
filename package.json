@@ -9,10 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "apollo-boost": "^0.4.9",
+    "graphql": "^16.6.0",
+    "pinia": "^2.1.4",
+    "vue": "^3.2.47",
+    "vue-apollo": "^3.1.0",
+    "vue-router": "4",
+    "vuetify": "^3.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "jest": "^29.5.0",
+    "standard": "^17.1.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
     "vue-tsc": "^1.4.2"
