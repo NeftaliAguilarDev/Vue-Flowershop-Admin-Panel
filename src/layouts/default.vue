@@ -53,22 +53,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue';
-import { mdiChevronLeft, mdiHomeCity, mdiAccountTie, mdiChartLine, mdiChartBar, mdiChartPie, mdiViewDashboardOutline, mdiOrderBoolAscendingVariant, mdiListStatus, mdiCashMultiple } from '@mdi/js';
+import { ref } from 'vue';
+import { mdiChevronLeft, mdiAccountTie, mdiChartLine, mdiChartBar, mdiChartPie, mdiViewDashboardOutline, mdiOrderBoolAscendingVariant, mdiListStatus, mdiCashMultiple } from '@mdi/js';
 
 const drawer = ref(true);
 const rail = ref(false);
-const open = reactive(['Users'])
-const admins = reactive([
-    ['Management', 'mdiHomeCity'],
-    ['Settings', 'mdiHomeCity'],
-])
-const cruds = reactive([
-    ['Create', 'mdiHomeCity'],
-    ['Read', 'mdiHomeCity'],
-    ['Update', 'mdiHomeCity'],
-    ['Delete', 'mdiHomeCity'],
-])
 
 </script>
 
