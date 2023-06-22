@@ -1,6 +1,6 @@
 <template>
     <div>
-       This is order
+       This is inventory
     </div>
 </template>
 
