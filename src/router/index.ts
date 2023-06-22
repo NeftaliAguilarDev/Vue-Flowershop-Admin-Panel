@@ -8,36 +8,36 @@ const routes = [
   {
     path: '/orders',
     name: 'orders.index',
-    component: () => import('../views/Orders/Index.vue')
+    component: () => import('../views/orders/Index.vue')
   },
   {
     path: '/customers',
     name: 'customers.index',
-    component: () => import('../views/Customers/Index.vue')
+    component: () => import('../views/customers/Index.vue')
   },
   {
     path: '/expenses',
     name: 'expenses.index',
-    component: () => import('../views/Expenses/Index.vue')
+    component: () => import('../views/expenses/Index.vue')
   },
   {
     path: '/inventory',
     name: 'inventory.index',
-    component: () => import('../views/Inventory/Index.vue')
+    component: () => import('../views/inventory/Index.vue')
   },
   {
     path: '/reports',
-    component: () => import('../views/Reports/Index.vue'),
+    component: () => import('../views/reports/Index.vue'),
     children: [
       {
         path: '/intern',
         name: 'reports.intern',
-        component: () => import('../views/Reports/Intern.vue')
+        component: () => import('../views/reports/Intern.vue')
       },
       {
         path: '/extern',
         name: 'reports.extern',
-        component: () => import('../views/Reports/Extern.vue')
+        component: () => import('../views/reports/Extern.vue')
       }
     ]
   },
