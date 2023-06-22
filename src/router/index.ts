@@ -27,6 +27,7 @@ const routes = [
   },
   {
     path: '/reports',
+    name: 'reports.index',
     component: () => import('../views/reports/Index.vue'),
     children: [
       {
