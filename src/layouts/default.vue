@@ -2,7 +2,7 @@
     <v-layout>
         <MenuHeader />
         <v-main class="border-none">
-            <div class="p-10">
+            <div class="py-2 px-5">
                 <slot></slot>
             </div>
         </v-main>
