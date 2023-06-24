@@ -30,7 +30,7 @@
 <script setup lang="ts">
 
 import { ref } from 'vue';
-import { mdiChevronLeft, mdiAccountTie, mdiChartLine, mdiChartBar, mdiChartPie, mdiViewDashboardOutline, mdiOrderBoolAscendingVariant, mdiListStatus, mdiCashMultiple } from '@mdi/js';
+import { mdiChevronLeft, mdiAccountTie, mdiChartLine, mdiChartBar, mdiChartPie, mdiViewDashboardOutline, mdiOrderBoolAscendingVariant, mdiListStatus, mdiCashMultiple, mdiFormatListBulleted } from '@mdi/js';
 const drawer = ref(true);
 const rail = ref(false);
 interface MenuType {
@@ -52,6 +52,11 @@ const menu: MenuItems[] = [
         routeName: 'orders.index',
         title: 'Orders',
         icon: mdiOrderBoolAscendingVariant
+    },
+    {
+        routeName: 'products.index',
+        title: 'Products',
+        icon: mdiFormatListBulleted
     },
     {
         routeName: 'customers.index',

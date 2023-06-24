@@ -11,6 +11,11 @@ const routes = [
     component: () => import('../views/orders/Index.vue')
   },
   {
+    path: '/products',
+    name: 'products.index',
+    component: () => import('../views/products/Index.vue')
+  },
+  {
     path: '/customers',
     name: 'customers.index',
     component: () => import('../views/customers/Index.vue')

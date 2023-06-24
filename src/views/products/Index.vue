@@ -3,7 +3,7 @@
         <v-row>
             <v-col cols="12">
                 <v-card>
-                    <v-card-title class="text-purple-500 !font-extrabold">Orders</v-card-title>
+                    <v-card-title class="text-purple-500 !font-extrabold">Products</v-card-title>
                     <v-data-table :headers="headers" :items="orders" class="elevation-1">
                         <template v-slot:item.calories="{ item }">
                             <v-chip :color="getColor(item.columns.calories)">
