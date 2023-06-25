@@ -12,6 +12,7 @@
     "apollo-boost": "^0.4.9",
     "graphql": "^16.6.0",
     "pinia": "^2.1.4",
+    "vee-validate": "^4.10.2",
     "vue": "^3.2.47",
     "vue-apollo": "^3.1.0",
     "vue-router": "4",
