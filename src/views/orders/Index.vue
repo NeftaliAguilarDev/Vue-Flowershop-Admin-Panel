@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid="true">
+    <v-container :fluid="true">
         <v-row>
             <v-col cols="12">
                 <v-card>
