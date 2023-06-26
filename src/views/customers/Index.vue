@@ -9,7 +9,6 @@
                             class="mr-5 px-5 py-2 bg-purple-500 hover:bg-purple-600 rounded-md text-white">Create
                             customer</router-link>
                     </div>
-
                     <v-data-table :loading="loadingData" :headers="headers" :items="customers" class="elevation-1">
                     </v-data-table>
                 </v-card>
@@ -19,11 +18,22 @@
 </template>
 
 <script setup lang="ts">
+import { reactive, ref } from 'vue';
 import { useQuery } from '@vue/apollo-composable'
 import gql from 'graphql-tag';
-import { reactive, ref } from 'vue';
 import { VDataTable } from 'vuetify/labs/VDataTable'
 const loadingData = ref(true)
+const headers = reactive([
+    {
+        title: '# ID',
+        align: 'start',
+        sortable: false,
+        key: 'id',
+    },
+    { title: 'Name', key: 'name' },
+    { title: 'Phone', key: 'phone' },
+    { title: 'Email', key: 'email' },
+]);
 const { result } = useQuery(gql`
       query getCustomers {
         customers {
@@ -43,17 +53,7 @@ setTimeout(() => {
     });
     loadingData.value = false
 }, 1000);
-const headers = reactive([
-    {
-        title: '# ID',
-        align: 'start',
-        sortable: false,
-        key: 'id',
-    },
-    { title: 'Name', key: 'name' },
-    { title: 'Phone', key: 'phone' },
-    { title: 'Email', key: 'email' },
-]);
+
 </script>
 
 <style scoped></style>
