@@ -9,7 +9,13 @@
                             class="mr-5 px-5 py-2 bg-purple-500 hover:bg-purple-600 rounded-md text-white">Create
                             customer</router-link>
                     </div>
-                    <v-data-table :loading="loadingData" :headers="headers" :items="customers" class="elevation-1">
+                    <div class="p-3">
+                        <v-alert v-if="error" variant="outlined" color="purple">
+                            There was an error. Please try later.
+                        </v-alert>
+                    </div>
+
+                    <v-data-table :loading="loading" :headers="headers" :items="customers" class="elevation-1">
                     </v-data-table>
                 </v-card>
             </v-col>
@@ -18,11 +24,10 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from 'vue';
+import { reactive, computed } from 'vue';
 import { useQuery } from '@vue/apollo-composable'
 import gql from 'graphql-tag';
 import { VDataTable } from 'vuetify/labs/VDataTable'
-const loadingData = ref(true)
 const headers = reactive([
     {
         title: '# ID',
@@ -34,7 +39,7 @@ const headers = reactive([
     { title: 'Phone', key: 'phone' },
     { title: 'Email', key: 'email' },
 ]);
-const { result } = useQuery(gql`
+const { result, loading, error } = useQuery(gql`
       query getCustomers {
         customers {
           id,
@@ -44,15 +49,8 @@ const { result } = useQuery(gql`
         }
       }
     `)
-const customers = reactive([])
-setTimeout(() => {
-    const { customers: items } = result.value
-    console.log(items)
-    items.forEach(item => {
-        customers.push(item)
-    });
-    loadingData.value = false
-}, 1000);
+
+const customers = computed(() => result.value?.customers)
 
 </script>
 
