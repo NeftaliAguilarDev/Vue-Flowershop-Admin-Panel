@@ -29,6 +29,11 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useField, useForm } from 'vee-validate'
+import { useMutation } from '@vue/apollo-composable';
+import gql from 'graphql-tag';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 const { handleSubmit } = useForm({
     validationSchema: {
         name(value) {
@@ -60,9 +65,44 @@ const howFindUsReasons = ref([
     'Social Media',
 ])
 
-const submit = handleSubmit(values => {
-    alert(JSON.stringify(values, null, 2))
+const { mutate: createCustomer, onDone } = useMutation(gql`
+        mutation createCustomer( $name: String!, $email: String!, $phone: String!) {
+            createCustomer(
+                name: $name,
+                email: $email,
+                phone: $phone,
+            )
+                {
+                    id,
+                    name,
+                    email,
+                    phone
+                }
+        }
+    `, () => ({
+    update: (cache, { data: { createCustomer } }) => {
+        console.log(createCustomer)
+    },
+}));
+
+
+onDone(() => {
+    router.push({
+        name: 'customers.index',
+    })
 })
+
+const submit = handleSubmit(values => {
+    const { name, phone, email } = values
+    createCustomer({
+        name,
+        phone,
+        email,
+    })
+});
+
+
+
 </script>
 
 <style scoped></style>

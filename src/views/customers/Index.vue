@@ -41,16 +41,18 @@ const headers = reactive([
 ]);
 const { result, loading, error } = useQuery(gql`
       query getCustomers {
-        customers {
-          id,
-          name,
-          phone,
-          email
+        customers(first:10, page:1) {
+          data{
+            id,
+            name,
+            phone,
+            email
+          }
         }
       }
     `)
 
-const customers = computed(() => result.value?.customers)
+const customers = computed(() => result.value?.customers.data)
 
 </script>
 
