@@ -38,7 +38,7 @@ const headers = reactive([
     { title: 'Phone', key: 'phone' },
     { title: 'Email', key: 'email' },
 ]);
-const { result: customersListing } = getCustomers()
+const { result: customersListing, loading, error } = getCustomers()
 const customers = computed(() => customersListing.value?.customers.data)
 
 </script>
