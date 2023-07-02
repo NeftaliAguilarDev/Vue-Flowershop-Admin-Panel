@@ -25,8 +25,7 @@
 
 <script setup lang="ts">
 import { reactive, computed } from 'vue';
-import { useQuery } from '@vue/apollo-composable'
-import gql from 'graphql-tag';
+import { getCustomers } from '../../modules/customers/getCustomers';
 import { VDataTable } from 'vuetify/labs/VDataTable'
 const headers = reactive([
     {
@@ -39,20 +38,8 @@ const headers = reactive([
     { title: 'Phone', key: 'phone' },
     { title: 'Email', key: 'email' },
 ]);
-const { result, loading, error } = useQuery(gql`
-      query getCustomers {
-        customers(first:10, page:1) {
-          data{
-            id,
-            name,
-            phone,
-            email
-          }
-        }
-      }
-    `)
-
-const customers = computed(() => result.value?.customers.data)
+const { result: customersListing } = getCustomers()
+const customers = computed(() => customersListing.value?.customers.data)
 
 </script>
 
