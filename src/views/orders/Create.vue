@@ -3,7 +3,7 @@
         <v-row>
             <v-col cols="8">
                 <v-card class="px-5">
-                    <v-card-title class="text-purple-500 !font-extrabold m-5">Create Order</v-card-title>
+                    <v-card-title class="text-purple-500 !font-extrabold my-5">Create Order</v-card-title>
                     <v-row class="my-10">
                         <v-col cols="3">
                             <v-card>
@@ -11,9 +11,9 @@
                                     alt="">
                                 <h3 class="text-lg text-center m-2">Rosinante</h3>
                                 <div class="mx-auto flex justify-around items-center pb-5 max-w-[50%]">
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">-</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">-</button>
                                     <span class="text-2xl">1</span>
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">+</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">+</button>
                                 </div>
                             </v-card>
                         </v-col>
@@ -23,9 +23,9 @@
                                     alt="">
                                 <h3 class="text-lg text-center m-2">Rosinante</h3>
                                 <div class="mx-auto flex justify-around items-center pb-5 max-w-[50%]">
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">-</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">-</button>
                                     <span class="text-2xl">1</span>
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">+</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">+</button>
                                 </div>
                             </v-card>
                         </v-col>
@@ -35,9 +35,9 @@
                                     alt="">
                                 <h3 class="text-lg text-center m-2">Rosinante</h3>
                                 <div class="mx-auto flex justify-around items-center pb-5 max-w-[50%]">
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">-</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">-</button>
                                     <span class="text-2xl">1</span>
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">+</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">+</button>
                                 </div>
                             </v-card>
                         </v-col>
@@ -47,9 +47,9 @@
                                     alt="">
                                 <h3 class="text-lg text-center m-2">Rosinante</h3>
                                 <div class="mx-auto flex justify-around items-center pb-5 max-w-[50%]">
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">-</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">-</button>
                                     <span class="text-2xl">1</span>
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">+</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">+</button>
                                 </div>
                             </v-card>
                         </v-col>
@@ -59,9 +59,9 @@
                                     alt="">
                                 <h3 class="text-lg text-center m-2">Rosinante</h3>
                                 <div class="mx-auto flex justify-around items-center pb-5 max-w-[50%]">
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">-</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">-</button>
                                     <span class="text-2xl">1</span>
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">+</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">+</button>
                                 </div>
                             </v-card>
                         </v-col>
@@ -71,9 +71,9 @@
                                     alt="">
                                 <h3 class="text-lg text-center m-2">Rosinante</h3>
                                 <div class="mx-auto flex justify-around items-center pb-5 max-w-[50%]">
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">-</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">-</button>
                                     <span class="text-2xl">1</span>
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">+</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">+</button>
                                 </div>
                             </v-card>
                         </v-col>
@@ -83,9 +83,9 @@
                                     alt="">
                                 <h3 class="text-lg text-center m-2">Rosinante</h3>
                                 <div class="mx-auto flex justify-around items-center pb-5 max-w-[50%]">
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">-</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">-</button>
                                     <span class="text-2xl">1</span>
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">+</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">+</button>
                                 </div>
                             </v-card>
                         </v-col>
@@ -95,9 +95,9 @@
                                     alt="">
                                 <h3 class="text-lg text-center m-2">Rosinante</h3>
                                 <div class="mx-auto flex justify-around items-center pb-5 max-w-[50%]">
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">-</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">-</button>
                                     <span class="text-2xl">1</span>
-                                    <button class="text-2xl text-black font-bold border rounded-lg h-7 w-7 flex items-center justify-center">+</button>
+                                    <button class="text-2xl font-bold border rounded-lg h-7 w-7 flex items-center justify-center bg-purple-500 text-white hover:bg-purple-600">+</button>
                                 </div>
                             </v-card>
                         </v-col>
