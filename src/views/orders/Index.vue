@@ -3,7 +3,12 @@
         <v-row>
             <v-col cols="12">
                 <v-card>
-                    <v-card-title class="text-purple-500 !font-extrabold">Orders</v-card-title>
+                    <div class="flex justify-between mt-5 items-center">
+                        <v-card-title class="text-purple-500 !font-extrabold">Orders</v-card-title>
+                        <router-link :to="{ name: 'orders.create' }"
+                            class="mr-5 px-5 py-2 bg-purple-500 hover:bg-purple-600 rounded-md text-white">Create
+                            order</router-link>
+                    </div>
                     <v-data-table :headers="headers" :items="orders" class="elevation-1">
                         <template v-slot:item.calories="{ item }">
                             <v-chip :color="getColor(item.columns.calories)">
